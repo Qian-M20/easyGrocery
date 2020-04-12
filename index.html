@@ -1,0 +1,504 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy_Groceries_Splash_Page</title>
+    <!-- link to stylesheet -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <!-- header -->
+    <header>
+      <div class="top-bar header">
+            <div class="top-bar-left logobox">
+              <a href="#"><img class="splashLogo" src="img/logo_final.svg" alt="logo" ></a>
+            </div>
+            <div class="top-bar-right searchbar">
+              <ul class="menu">
+                <li><input type="search" placeholder="Search" class="search"></li>
+                <!-- <div class="found hide_all">
+                  <ul>
+                  </ul>
+                </div> -->
+                <li class="searchClick"><button type="button" class="button"><i class="fas fa-search"></i></button></li>
+              </ul>
+            </div>
+      </div>
+    </header>
+
+    <!-- hamburger menu -->
+    <div class="title-bar nav" data-responsive-toggle="example-menu" data-hide-for="medium">
+      <button class="menu-icon" type="button" data-toggle="example-menu"></button>
+      <div class="title-bar-title">
+          <a href="#"><img class="splashLogo" src="img/logo_final.svg" alt="logo" ></a>
+      </div>
+      <div>
+        <a class="cartIcon shoppingCart" href="#">
+          <div class="cartCircle">0</div>
+          <i class="fas fa-shopping-cart"></i>
+        </a>
+    </div>
+    </div>
+    
+    <div class="main-nav nav" id="example-menu">
+        <ul class="dropdown menu expanded" data-dropdown-menu>
+          <!-- <li class="menu-text">Site Title</li> -->
+          <li class="mobileCloseBtn">✕</li>
+          <ul class="menu mobileSearch">
+            <li><input type="search" placeholder="Search" class="search"></li>
+            <li class="searchClick"><button type="button" class="button"><i class="fas fa-search"></i></button></li>
+          </ul>
+        
+          <li>
+            <a class="dropdown" href="#">Departments</a>
+            <ul class="menu vertical department_list">
+              <li class="cell"><a href="products.html">Fruits & Vegetables</a></li>
+              <li class="cell"><a href="#">Bakery</a></li>
+              <li class="cell"><a href="#">Meat</a></li>
+              <li class="cell"><a href="#">Dairy & eggs</a></li>
+              <li class="cell"><a href="#">Frozen food</a></li>
+              <li class="cell"><a href="#">Drinks</a></li>
+              <li class="cell"><a href="#">Baby</a></li>
+              <li class="cell"><a href="#">Home & outdoor</a></li>
+              <li class="cell"><a href="#">Pets</a></li>
+              <li class="cell"><a href="#">Deli</a></li>
+              <li class="cell"><a href="#">Seafod</a></li>
+              <li class="cell"><a href="#">Pantry food</a></li>
+              <li class="cell"><a href="#">Health</a></li>
+              <li class="cell"><a href="#">Beauty</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Weekly Sales</a></li>
+          <li><a href="#">Flyer & Coupons</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li class="cart">
+            <a href="#" class="shoppingCart">
+              <div class="cartCircle">0</div>
+              <i class="fas fa-shopping-cart"></i>
+              <!-- <img src="img/cart.svg" alt="cart"> -->
+            </a>
+          </li>
+        </ul>
+    </div>
+
+    <!-- search bar -->
+    <!-- <div class="grid-container">
+      <div class="grid-x">        
+          <ul class="menu mobileSearch">
+            <li><input type="search" placeholder="Search" class="search"></li>
+            <li class="searchClick"><button type="button" class="button"><i class="fas fa-search"></i></button></li>
+          </ul>
+      </div>
+    </div> -->
+    
+    <!-- splash page -->
+    <main id="splash" class="hide_all">
+
+      <!-- slider group -->
+      <div class="sliderGroup mobileSlider">
+        <img src="./img/mobileSlide.png" alt="slider" >
+      </div>
+
+      <div class="sliderGroup bigSlider">
+        <img src="./img/slider11.png" alt="slider1">
+        <img src="./img/slider_13.jpg" alt="slider2">
+        <img src="./img/slider_22.jpg" alt="slider3">
+      </div>
+
+      <!-- feature intro -->
+      <!-- <div class="featureSets grid-container">
+        <div class="grid-x grid-margin-x grid-margin-y">
+
+          <div class="cell large-4">
+              <div class="skillIcon"><i class="fas fa-funnel-dollar"></i></div>
+              <p class="genState"> Low Price</p>
+          </div>
+
+          <div class="cell large-4">
+              <div class="skillIcon"><i class="fas fa-carrot"></i></div>
+              <p class="genState"> Freshness</p>
+          </div>
+
+          <div class="cell large-4">
+              <div class="skillIcon"><i class="fas fa-truck-pickup"></i></div>
+              <p class="genState">Convenience</p>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- express section -->
+      <div class="express-section">
+        <h1>Easy Express</h1>
+        <div class="grid-container">
+
+          <div class="grid-x grid-margin-x grid-margin-y">
+                    <div class="cell large-4 medium-6 getProductsByDepartments" data-id="30" id="Snacks">
+                      <a class="snacks imgBox" href="#">
+                        <img src="./img/snacks.jpg" alt="snacks">
+                      </a>
+                        
+                      <div class="catTag">
+                        <div class="textBox">
+                          Snacks
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="cell large-4 medium-6 getProductsByDepartments" data-id="13" id="Drinks">
+                      <a class="beverages imgBox" href="#">
+                        <img src="./img/beverages.jpg" alt="drinks">
+                      </a>
+                        
+                      <div class="catTag">
+                        <div class="textBox">
+                          Drinks
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="cell large-4 medium-6 getProductsByDepartments" data-id="2" id="Bakery">
+                      <a class="bakery imgBox" href="#">
+                        <img src="./img/bakery.jpg" alt="bakery">
+                      </a>
+                        
+                      <div class="catTag">
+                        <div class="textBox">
+                          Bakery
+                        </div>
+                      </div>
+                    </div>
+
+              <!-- <div class="grid-x grid-margin-x grid-margin-y"> -->
+                <div class="cell large-4 medium-6 getProductsByDepartments" data-id="26" id="Produce"> 
+                  <a class="fruits imgBox" href="#">
+                    <img src="./img/fruits_vegies.jpg" alt="produce">
+                  </a>
+                  <div class="catTag">
+                    <div class="textBox">
+                      Produce
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cell large-4 medium-6 getProductsByDepartments" data-id="18" id="Health & Beauty">
+                  <a class="showers imgBox" href="#">
+                    <img src="./img/bath_shower.jpg" alt="health">
+                  </a>
+                  <div class="catTag">
+                    <div class="textBox">
+                      Health & Beauty
+                    </div>
+                  </div>
+                </div>
+                  
+                  
+                <div class="cell large-4 medium-6 getProductsByDepartments" data-id="19" id="Meat & Poultry">
+                  <a class="meat imgBox" href="#">
+                    <img src="./img/meat.jpg" alt="meat">
+                  </a>
+                  <div class="catTag">
+                    <div class="textBox">
+                      Meat
+                    </div>
+                  </div>
+                </div>
+                  
+          </div> 
+          
+        </div>
+      </div>
+    </main>
+
+    <!-- products page -->
+    <main id="products" class="hide_all">
+      <!-- <div class="grid-container">
+        <div class="grid-x">        
+            <ul class="menu mobileSearch">
+              <li class="inputSearch"><input type="search" class="search" placeholder="Search"></li>
+              <li class="btnSearch"><button type="button" class="button"><i class="fas fa-search"></i></button></li>
+            </ul>
+        </div>
+      </div> -->
+
+      <div class="products-section">
+        <h1 class="catTitle">Fruits</h1>
+        <div class="grid-container">
+          <div class="grid-x grid-margin-x grid-margin-y product_list">
+          </div>      
+        </div>
+      </div>
+    </main>
+    <!-- cart page -->
+    <main id="cart" class="hide_all">
+      <div class="grid-container">
+          <!-- <h1>MY SHOPPING CART</h1> -->
+          <div class="row">
+              <div class="columns">
+                  <ul class="tabs grid-x" data-active-collapse="true" data-tabs id="collapsing-tabs">
+                    <li class="tabs-title yourCartTab is-active cell large-2 medium-2 small-3"><a href="#panel1c" aria-selected="true">Your Cart</a></li>
+                    <li class="tabs-title logInTab cell large-2 medium-2 small-3"><a href="#panel2c">Log In</a></li>
+                    <li class="tabs-title paymentTab cell large-2 medium-2 small-3"><a href="#panel3c">Payment</a></li>
+                    <!-- <li class="tabs-title confirmTab cell large-2 medium-2 small-3"><a href="#panel4c">Confirmation</a></li> -->
+                  </ul>
+                  
+                  <div class="tabs-content" data-tabs-content="collapsing-tabs">
+                    <div class="tabs-panel cart-section cart_data hideAll is-active" id="panel1c">
+                      <ul class="menu expanded" >
+                        <li>Product</li>
+                        <li>Quantity</li>
+                        <li>Price</li>
+                        <li>Ext.Price</li>
+                      </ul>
+                    <!-- /*cart section*/ -->
+                      <div class="main-cart">
+                          <div class="grid-x cartDetail">
+                              <div class="large-3 medium-3  cel cartImg">
+                                  <img src="./img/products/basil.jpg" alt="basil">
+                                  <button class="remove1">✕ Remove Item</button>
+                                  <p class="itemName itemName1">Basil</p>
+                              </div>
+                              <p class="itemName itemName2">Basil</p>
+                              <div class="large-3 medium-3  cel numTagWrapper">
+                                <div class="numTag">
+                                  <button>+</button>
+                                  <p>1</p>
+                                  <button>–</button>
+                                </div>
+                                <button class="remove">✕ Remove Item</button>
+                              </div>
+                              <div class="large-3 medium-3  cel">$10.00/kg</div>
+                              <div class="large-3 medium-3  cel total">$20.00</div>
+
+                          </div>
+
+                          <div class="grid-x cartDetail">
+                              <div class="large-3 medium-3  cel cartImg">
+                                <img src="./img/products/cherry_tomatoes.jpg" alt="cherryTomatoes">
+                                <button class="remove1">✕ Remove Item</button>
+                                <p class="itemName itemName1">Cherry Tomatoes</p>
+                              </div>
+
+                              <p class="itemName itemName2">Cherry Tomatoes</p>
+
+                              <div class="large-3 medium-3  cel numTagWrapper">
+                                <div class="numTag">
+                                  <button>+</button>
+                                  <p>1</p>
+                                  <button>–</button>
+                                </div>
+                                <button class="remove">✕ Remove Item</button>
+                              </div>
+                              <div class="large-3 medium-3 cel">$10.00/kg</div>
+                              <div class="large-3 medium-3 cel total">$20.00</div>
+                          </div>
+                      </div>
+                      <div class="subtotal">
+                          <div class="grid-x">
+                              <div class="large-7  medium-7 small-5 cell"></div>
+                              <div class="large-2 medium-2 small-3 cel">
+                                  Subtotal
+                              </div>
+                              <div class="large-2 medium-2 small-3 cel">$20.00</div>
+                              <div class="large-1 medium-1 small-1 cel"></div>
+                          </div> 
+
+                          <div class="grid-x">
+                              <div class="large-7  medium-7 small-5 cell"></div>
+                              <div class="large-2 medium-2 small-3 cel">
+                                  Hst.
+                              </div>
+                              <div class="large-2 medium-2 small-3 cel">$2.13</div>
+                              <div class="large-1 medium-1 small-1 cel"></div>
+                          </div> 
+
+                          <div class="grid-x totalPrice">
+                              <div class="large-7  medium-7 small-5 cell"></div>
+                              <div class="large-2 medium-2 small-3 cel">
+                                  Total
+                              </div>
+                              <div class="large-2 medium-2 small-3 cel">$22.13</div>
+                              <div class="large-1 medium-1 small-1 cel"></div>
+                          </div> 
+
+                          <div class="grid-x checkOutBtn">
+
+                            <div class="large-8  medium-8 small5 cell"></div>
+                            <div class="large-3 medium-3 small-6 cel checkOutBtnCell">
+                                <input type="button" value="Checkout">
+                            </div>
+                            <div class="large-1 medium-1 small-1 cel"></div>
+                            
+                          </div>
+                      </div>
+                    </div>
+                    <div class="tabs-panel grid-x login-section hideAll" id="panel2c">
+                        <div class="checkout">
+                          <div class="loginOption hideAll">
+                            <input id="guest" type="button" value="Signout as Guest">
+                            <input id="login" type="button" value="Login">
+                            <input id="createAccount" type="button" value="Create Account">
+                          </div>
+          
+                          <div class="login hideAll">
+                              <form id="loginForm">
+                                  Email:<br>
+                                  <input id="username" name="username" type="text" value=""><br>
+                                  Password:<br>
+                                  <input id="password" name="password" type="password" value=""><br>
+                                  <input id="loginOK" type="button" value="GO">
+                              </form>
+                          </div>
+          
+                          <div class="createAccount hideAll">
+                              <form id="createAccountForm">
+                                  Email:<br>
+                                  <input id="ca_username" name="username" type="text" value=""><br>
+                                  Password:<br>
+                                  <input id="ca_password" name="password" type="password" value=""><br>
+                                  Password Again:<br>
+                                  <input id="ca_password2" name="password2" type="password" value=""><br>
+                        
+                                  First Name:<br>
+                                  <input id="ca_name_first" name="name_first" type="text" value=""><br>
+                                  Last Name:<br>
+                                  <input id="ca_name_last" name="name_last" type="text" value=""><br>
+
+                                  <input id="ca_loginOK" type="button" value="Create">
+                                
+                              </form>
+                          </div>
+          
+                          <div class="shippingAndBilling hideAll">
+                              <form id="shippingAndBillingForm">
+                                  Email:<br>
+                                  <input id="ca_username" class="sabEmail" name="username" type="text" value="">
+          
+                                  <div class="grid-x">
+                                      <div class="billing cell">
+                                          <h1>Billing Information</h1>
+                                          First Name:<br>
+                                          <input id="billing_name_first" name="billing_name_first" type="text" value=""><br>
+                                          Last Name:<br>
+                                          <input id="billing_name_last" name="billing_name_last" type="text" value=""><br>
+                                          Billing Address:<br>
+                                          <input id="billing_address" name="billing_address" type="text" value=""><br>
+                                      </div>
+          
+                                      <div class="shipping cell">
+                                          <h1>Shipping Information</h1>
+                                          First Name:<br>
+                                          <input id="shipping_name_first" name="shipping_name_first" type="text" value=""><br>
+                                          Last Name:<br>
+                                          <input id="shipping_name_last" name="shipping_name_last" type="text" value=""><br>
+                                          Shipping Address:<br>
+                                          <input id="shipping_address" name="shipping_address" type="text" value=""><br>
+                                      </div>
+                                      
+                                      <input id="go_to_three" type="button" value="Confirm">
+
+                                      <input id="transaction_code" type="hidden" name="transaction_code" value="">
+                                      <!-- resend the information again -->
+                                      <div class="products_to_purchase">
+                                          <!-- an example of my purchased item -->
+                                          <input name="myCart[765]" type="hidden" value="1">
+                                      </div>
+
+                                  </div>
+                              </form>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="tabs-panel payment-section hideAll" id="panel3c">
+                      <form id="paymentForm">                        
+                        <div class="grid-x">
+                        <div class="billing cell">
+                            <label for="card_holder_name">Card Holder Name:</label>
+                            <input id="card_holder_name" name="card_holder_name" type="text" value="">
+                            <label for="card_number">Card Number:</label>
+                            <input id="card_number" name="card_number" type="text" value="">
+                            <label for="">Expiry Date:</label>
+                            <select name="month" id="expiryMonth">
+                                <option value="month">Select a Month</option>
+                                <option value="1">01</option>
+                                <option value="2">02</option>
+                                <option value="3">03</option>
+                                <option value="4">04</option>
+                                <option value="5">05</option>
+                                <option value="6">06</option>
+                                <option value="7">07</option>
+                                <option value="8">08</option>
+                                <option value="9">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                            <select name="year" id="expiryYear">
+                                <option value="year">Select a Year</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                            </select>
+                        
+                            <label for="cvv">CVV:</label>
+                            <input id="cvv" name="card_verification" type="text" value="">
+                        </div>
+                        </div>
+                        
+                        <br>
+                        <input id="go_to_four" type="button" value="Complete">
+                        
+                      </form>
+                      <div id="confirmSection"></div>
+                    </div>
+                  </div>
+    
+              </div>
+          </div>
+      </div>
+  </main>
+
+    <footer>
+      <div class="grid-container">
+        <div class="grid-x">
+            <div class="cell large-4 medium-4 small-12 copyright">
+              Copyright © 2020 Easy Inc. 
+            </div>
+            <div class="cell large-8 medium-8 footerNav">
+              <div class="grid-x">
+                <div class="cell large-3 medium-3">
+                  Contact Us
+                </div>
+                <div class="cell large-4 medium-4">
+                  Terms And Conditions
+                </div>
+                <div class="cell large-2 medium-2">
+                  FAQ
+                </div>
+                <div class="cell large-3 medium-3">
+                  Accessibility 
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

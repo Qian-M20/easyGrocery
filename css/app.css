@@ -1,0 +1,47 @@
+.one {
+    background-color: brown;
+}
+
+.two {
+    background-color: pink;
+}
+
+.three {
+    background-color: blue;
+}
+
+.four {
+    background-color: green;
+}
+
+.cart {
+    position: fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.cart_holder {
+    position: fixed;
+    top:2rem;
+    bottom:2rem;
+    left:2rem;
+    right:2rem;
+    background-color: rgba(255,255,255,1);
+    border:0.25rem solid #A9A9A9;
+}
+
+/* for mobile view */
+@media print,screen and (max-width:40em) {
+    .cart_holder {
+        position: fixed;
+        top:0.25rem;
+        bottom:0.25rem;
+        left:0.25rem;
+        right:0.25rem;
+        background-color: rgba(255,255,255,1);
+        border:0.25rem solid #A9A9A9;
+    }
+}
