@@ -1,0 +1,230 @@
+.title-bar.nav {
+    background-color: white;
+    .title-bar-title {
+        width:100%;
+        img {
+            width: 30%;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+    }
+}
+
+.header {
+    background-color: $headerBg;
+    padding:1vw 4vw;
+    position:fixed;
+    width:100%;
+    z-index: 10001;
+    height:12vh;
+    top:0;
+    .logobox {
+        // background-color:greenyellow;
+        img {
+            width:10vw;
+        }
+    }
+    .searchbar {
+        width:30%;
+        // background-color: honeydew;
+        border-radius: 1rem;
+        ul.menu {
+            display:grid;
+            grid-template-columns: 6fr 1fr;
+            background-color: transparent;
+            li {
+                input {
+                    max-width: 100%;
+                    border:none;
+                    border-top-left-radius:0.5rem;
+                    border-bottom-left-radius:0.5rem;
+                    border-right:none;
+                    box-shadow: none;
+                    height:1.5em;
+                    font-size:1.5rem;
+                    background-color: rgb(200, 198, 202);
+                    color:#2f2826;
+                }
+                ::placeholder {
+                    color: white;
+                    opacity: 1; 
+                }
+                button{
+                    padding:0.5rem;
+                    margin-right:0;
+                    width:100%;
+                    border:none;
+                    background-color: rgb(200, 198, 202);
+
+                    // border:1px solid #cacaca;
+                    border-left:none;
+                    border-top-right-radius:0.5rem;
+                    border-bottom-right-radius:0.5rem;
+                    height:1.5em;
+                    font-size:1.5rem;
+                    // border-left: none;
+                    color:#006f36;
+                    &:hover {
+                        // background-color: #b7dabb;
+                        color: #D94862;
+                    }
+                }
+            }
+            // .found {
+            //     width:100%;
+            //     position: absolute;
+            //     top:7vh;
+            //     background-color: #F6F6F6;
+            //     z-index: 1003;
+            //     display:none;
+            //     ul {
+            //         background-color: transparent;
+            //         list-style: none;
+            //         margin-left:0;
+            //         li {
+            //             display:grid;
+            //             grid-template-columns: 2fr 5fr;
+            //             grid-gap: 1em;
+            //             border-bottom: 1px solid lightgray;
+            //             padding-bottom:0.5em;
+            //             padding-top:0.5em;
+            //             padding-left:1.25rem;
+            //             &:hover {
+            //                 background-color: lightgrey;
+            //             }
+            //             .foundItemImg {
+            //                 img {
+            //                     width:60%;
+            //                 }
+            //             }
+            //             .foundItemName {
+            //                 background-color: none;
+            //                 color: #332822;
+            //                 text-align: left;
+            //                 font-size:1.2em;
+            //                 display:grid;
+            //                 align-content: center;
+            //             }
+            //         }
+            //     }
+            // }
+           
+        }
+        
+    }
+}
+
+/* for tablet view */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .header{
+        height:7vh;
+        .logobox {
+            img {
+                width:15%;
+            }
+        }
+    }
+
+}
+
+/* for mobile view */
+@media print,screen and (max-width:40em) {
+    .header {
+        display:none;
+
+    }
+
+    .mobileSearch {
+        display:grid;
+        grid-template-columns: 3fr 1fr;
+        background-color: transparent;
+        li {
+            input {
+                max-width: 100%;
+                border-top-left-radius:0.5rem;
+                border-bottom-left-radius:0.5rem;
+                border-right:none;
+                box-shadow: none;
+                background-color: #F3F2F4;
+                height: 2em;
+                font-size:1.5rem;
+                border:none;
+            }
+            button{
+                padding:0.5rem;
+                margin-right:0;
+                width:100%;
+                background-color: #F3F2F4;
+                border:none;
+                // border:1px solid #cacaca;
+                border-left:none;
+                border-top-right-radius:0.5rem;
+                border-bottom-right-radius:0.5rem;
+                height:2em;
+                font-size:1.5rem;
+                // border-left: none;
+                color:#006f36;
+                &:hover {
+                    background-color: transparent;
+                    color: #fe3f00;
+                }
+            }
+        }
+
+        .found {
+            width:100%;
+            position: absolute;
+            top:7vh;
+            background-color: #F6F6F6;
+            z-index: 1003;
+            ul {
+                background-color: transparent;
+                list-style: none;
+                margin-left:0;
+                li {
+                    display:grid;
+                    grid-template-columns: 2fr 5fr;
+                    grid-gap: 1em;
+                    border-bottom: 1px solid lightgray;
+                    padding-bottom:0.5em;
+                    padding-top:0.5em;
+                    padding-left:1.25rem;
+                    &:hover {
+                        background-color: lightgrey;
+                    }
+                    .foundItemImg {
+                        img {
+                            width:60%;
+                        }
+                    }
+                    .foundItemName {
+                        background-color: none;
+                        color: #332822;
+                        text-align: left;
+                        font-size:1.2em;
+                        display:grid;
+                        align-content: center;
+                    }
+                }
+            }
+        }
+    }
+        
+
+    .title-bar.nav {
+        height:12vh;
+        display: grid;
+        position:fixed;
+        top:0;
+        width:100%;
+        z-index: 10001;
+        grid-template-columns: 1fr 6fr 1fr;
+        .title-bar-title{
+            img {
+                width:50%;
+            }
+        }
+    }
+
+}

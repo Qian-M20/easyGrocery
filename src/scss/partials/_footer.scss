@@ -1,0 +1,18 @@
+footer {
+    background-color: $footerBg;
+    font-family: 'Lato', sans-serif;
+    height:10vh;
+    line-height: 10vh;
+    text-align: right;
+    color:white;
+    .copyright {
+        text-align: left;
+    }
+}
+
+/* for mobile view */
+@media print,screen and (max-width:40em) {
+    .footerNav {
+        display:none;
+    }
+}

@@ -1,0 +1,3 @@
+@mixin dropShadow($x,$y,$col){
+    box-shadow: $x $y $col;
+}
